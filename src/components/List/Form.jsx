@@ -9,21 +9,25 @@ const defaultItems = [
     label: "Page 1",
     name: "page1",
     id: "1",
+    checked: false,
   },
   {
     label: "Page 2",
     name: "page2",
     id: "2",
+    checked: false,
   },
   {
     label: "Page 3",
     name: "page3",
     id: "3",
+    checked: false,
   },
   {
     label: "Page 4",
     name: "page4",
     id: "4",
+    checked: false,
   },
 ];
 
@@ -67,7 +71,12 @@ const Form = () => {
       <Separator />
       <CheckBoxList items={items} handleChange={handleCheckboxChange} />
       <Separator />
-      <Button disabled={!!!items.find((i) => i.checked)}>Done</Button>
+      <Button
+        disabled={!!!items.find((i) => i.checked)}
+        onSubmit={() => alert("Thank You!")}
+      >
+        Done
+      </Button>
     </Card>
   );
 };
