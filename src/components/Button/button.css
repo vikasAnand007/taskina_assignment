@@ -1,0 +1,12 @@
+.btn-style {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 206, 34, 1);
+  color: rgba(31, 33, 40, 1);
+  cursor: pointer;
+}
+
+.btn-disabled {
+  background-color: rgba(255, 216, 77, 1);
+}

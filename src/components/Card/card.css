@@ -1,0 +1,9 @@
+.card-style {
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 8px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
